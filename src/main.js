@@ -20,16 +20,22 @@ function newFunction() {
             td.style.width = '50px';
             td.style.height = '50px';
             tr.appendChild(td);
-            // some random text for each cell
-            const text = document.createTextNode(Math.floor(Math.random() * 100));
-            td.innerHTML = text.textContent;
-
             
+            // create a clickable text in each cell with some random text in it
+            const text = document.createElement('p');
+            text.innerHTML = 'Click Me';
+            td.appendChild(text);
+           
         }
         table.appendChild(tr);
     }
     grid.appendChild(table);
 }
+
+
+    
+
+
 
 // function myFunction()  which on clicking create a hello world message
 function myFunction() {
