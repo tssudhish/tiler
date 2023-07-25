@@ -3,30 +3,31 @@
 
 <head>
     <title>Tiles Plotter</title>
-    <style>
-        canvas {
+    <!-- use the temp.css as the style sheet -->
+    <link rel="stylesheet" href="./temp.css">
+    <!-- source main.js here-->
+    <script src="./main.js"></script>
+    <!-- bring in bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-            display: block;
-            margin: 1em auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            border: 1px solid black;
-
-
-
-        }
-    </style>
 </head>
 
 <body>
-    <!-- <h1>Random Tiles</h1> -->
-<!--     <canvas id="tilesCanvas" width="500" height="500"></canvas>
-    <script src="tiles.js"></script> -->
 
+    <div class="container">
+        <h2>Button States</h2>
+        <button id="btn" class="btn btn-primary" onclick="clickMe()">Click Me</button>
 
-    <h1>Random Tiles 2</h1>
+    </div>
 
-    <canvas id="tilesCanvas2" width="500" height="500"></canvas>
-    <script src="./tiles2.js"></script>
+    <div class="data">
+        <label id="lbl">0</label>
+    </div>
+
+    <div class="grid">
+        <table class="table">
+        </table>
+    </div>
 
 </body>
 
