@@ -16,11 +16,8 @@ function newFunction() {
         const tr = document.createElement('tr');
         for (let j = 0; j < 10; j++) {
             const td = document.createElement('td');
-            td.style.border = '1px solid black';
-            td.style.width = '50px';
-            td.style.height = '50px';
+            setTableStyle(td);
             tr.appendChild(td);
-            
             // create a clickable text in each cell with some random text in it
             const text = document.createElement('p');
             text.innerHTML = 'Click Me';
@@ -30,6 +27,12 @@ function newFunction() {
         table.appendChild(tr);
     }
     grid.appendChild(table);
+
+    function setTableStyle(td) {
+        td.style.border = '1px solid black';
+        td.style.width = '50px';
+        td.style.height = '50px';
+    }
 }
 
 
